@@ -8,7 +8,7 @@ terraform {
   }
   backend "s3" {
     bucket = "group-msg-aws-preview-bucket"
-    key    = "infrastructure.tfstate"
+    key    = "pre_dev.tfstate"
     region = "eu-central-1"
   }
 
