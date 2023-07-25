@@ -6,7 +6,7 @@ output "ecr_repository_url" {
   value = aws_ecr_repository.ecr_repository.repository_url
 }
 
-resource "aws_ecr_lifecycle_policy" "pkv_oci_service_policy" {
+resource "aws_ecr_lifecycle_policy" "ecr_policy" {
   repository = var.repository_name
 
   policy = <<EOF
