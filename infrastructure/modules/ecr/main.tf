@@ -7,7 +7,7 @@ output "ecr_repository_url" {
 }
 
 resource "aws_ecr_lifecycle_policy" "ecr_policy" {
-  repository = var.repository_name
+  repository = aws_ecr_repository.ecr_repository.name
 
   policy = <<EOF
 {
