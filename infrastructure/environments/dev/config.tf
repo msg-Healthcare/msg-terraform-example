@@ -7,8 +7,8 @@ terraform {
 
   }
   backend "s3" {
-    bucket = "group-msg-aws-preview-bucket"
-    key    = "pre_dev.tfstate"
+    bucket = "msg-tf-example-terraform-config"
+    key    = "dev.tfstate"
     region = "eu-central-1"
   }
 
@@ -19,7 +19,7 @@ provider "aws" {
   region = "eu-central-1"
   default_tags {
     tags = {
-      Project = "terraforming-aws-pre-dev"
+      Project = "msg-terraform-example-dev"
     }
   }
 }

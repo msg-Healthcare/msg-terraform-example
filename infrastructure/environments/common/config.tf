@@ -8,7 +8,7 @@ terraform {
   }
   backend "s3" {
     bucket = "msg-tf-example-terraform-config"
-    key    = "prod.tfstate"
+    key    = "common.tfstate"
     region = "eu-central-1"
   }
 
@@ -19,7 +19,7 @@ provider "aws" {
   region = "eu-central-1"
   default_tags {
     tags = {
-      Project = "msg-terraform-example-prod"
+      Project = "msg-terraform-example-common"
     }
   }
 }

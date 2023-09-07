@@ -1,4 +1,4 @@
 module "ecs_cluster" {
   source = "../../modules/ecs_cluster"
-  cluster_name = "prod"
+  cluster_name = "dev"
 }

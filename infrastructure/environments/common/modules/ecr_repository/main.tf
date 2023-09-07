@@ -2,10 +2,6 @@ resource "aws_ecr_repository" "ecr_repository" {
   name = var.repository_name
 }
 
-output "ecr_repository_url" {
-  value = aws_ecr_repository.ecr_repository.repository_url
-}
-
 resource "aws_ecr_lifecycle_policy" "ecr_policy" {
   repository = aws_ecr_repository.ecr_repository.name
 
