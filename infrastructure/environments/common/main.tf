@@ -1,9 +1,9 @@
-module "service_a" {
+module "parent_a" {
   source = "./modules/ecr_repository"
-  repository_name = "service_a"
+  repository_name = "parent_a"
 }
 
-module "service_b" {
+module "parent_b" {
   source = "./modules/ecr_repository"
-  repository_name = "service_b"
+  repository_name = "parent_b"
 }
